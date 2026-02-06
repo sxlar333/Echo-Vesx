@@ -12,15 +12,13 @@ import colorama
 from pystyle import Colorate, Colors
 
 ASCII_INTERFACE = """
-    ▓█████  ▄████▄   ██░ ██  ▒█████      ██▒   █▓▓█████   ██████ ▒██   ██▒
-    ▓█   ▀ ▒██▀ ▀█  ▓██░ ██▒▒██▒  ██▒   ▓██░   █▒▓█   ▀ ▒██    ▒ ▒▒ █ █ ▒░
-    ▒███   ▒▓█    ▄ ▒██▀▀██░▒██░  ██▒    ▓██  █▒░▒███   ░ ▓██▄   ░░  █   ░
-    ▒▓█  ▄ ▒▓▓▄ ▄██▒░▓█ ░██ ▒██   ██░     ▒██ █░░▒▓█  ▄   ▒   ██▒ ░ █ █ ▒ 
-    ░▒████▒▒ ▓███▀ ░░▓█▒░██▓░ ████▓▒░      ▒▀█░  ░▒████▒▒██████▒▒▒██▒ ▒██▒
-    ░░ ▒░ ░░ ░▒ ▒  ░ ▒ ░░▒░▒░ ▒░▒░▒░       ░ ▐░  ░░ ▒░ ░▒ ▒▓▒ ▒ ░▒▒ ░ ░▓ ░
-     ░ ░  ░  ░  ▒    ▒ ░▒░ ░  ░ ▒ ▒░       ░       
-       ░  ░░ ░       ░  ░  ░    ░ ░           ░     ░  ░      ░   ░    ░  
-           ░                                 ░                            
+        ▓█████  ▄████▄   ██░ ██  ▒█████      ██▒   █▓▓█████   ██████ ▒██   ██▒
+        ▓█   ▀ ▒██▀ ▀█  ▓██░ ██▒▒██▒  ██▒   ▓██░   █▒▓█   ▀ ▒██    ▒ ▒▒ █ █ ▒░
+        ▒███   ▒▓█    ▄ ▒██▀▀██░▒██░  ██▒    ▓██  █▒░▒███   ░ ▓██▄   ░░  █   ░
+        ▒▓█  ▄ ▒▓▓▄ ▄██▒░▓█ ░██ ▒██   ██░     ▒██ █░░▒▓█  ▄   ▒   ██▒ ░ █ █ ▒ 
+        ░▒████▒▒ ▓███▀ ░░▓█▒░██▓░ ████▓▒░      ▒▀█░  ░▒████▒▒██████▒▒▒██▒ ▒██▒
+        ░░ ▒░ ░░ ░▒ ▒  ░ ▒ ░░▒░▒░ ▒░▒░▒░       ░ ▐░  ░░ ▒░ ░▒ ▒▓▒ ▒ ░▒▒ ░ ░▓ ░
+         ░ ░  ░  ░  ▒    ▒ ░▒░ ░  ░ ▒ ▒░       ░ ░░   ░ ░  ░  ░▒  ░ ░░░ ░ ░░ ░      
                         """
 
 Menu_1 = f"""
@@ -58,27 +56,6 @@ def clear_screen():
     os.system("clear" if os.name != "nt" else "cls")
 
 menu = True
-
-color = colorama.Fore
-red = color.RED
-white = color.WHITE
-green = color.GREEN
-reset = color.RESET
-blue = color.BLUE
-yellow = color.YELLOW
-
-BEFORE = f'{red}[{white}'
-AFTER = f'{red}]'
-
-BEFORE_GREEN = f'{green}[{white}'
-AFTER_GREEN = f'{green}]'
-
-INPUT = f'{BEFORE}>{AFTER} |'
-INFO = f'{BEFORE}!{AFTER} |'
-ERROR = f'{BEFORE}x{AFTER} |'
-ADD = f'{BEFORE}+{AFTER} |'
-WAIT = f'{BEFORE}~{AFTER} |'
-NOTE = f'{BEFORE}NOTE{AFTER} |'
 
 username_pc = os.getlogin()
 tool_path = os.path.dirname(os.path.abspath(__file__)).split("Program\\")[0].split("Program/")[0].strip()
