@@ -11,13 +11,6 @@ colorama.init(autoreset=True)
 # ┣  ┫  ┳  ┻  ╋
 
 
-def show_banner():
-    clear_screen()
-    print(BANNER)
-    if menu == True:
-        print(MENU1)
-    else:
-        print(MENU2)
 
 info = """
     name: echo vesx rework
