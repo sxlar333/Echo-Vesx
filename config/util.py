@@ -12,43 +12,43 @@ import colorama
 from pystyle import Colorate, Colors
 
 ASCII_INTERFACE = """
-            ▓█████  ▄████▄   ██░ ██  ▒█████      ██▒   █▓▓█████   ██████ ▒██   ██▒
-            ▓█   ▀ ▒██▀ ▀█  ▓██░ ██▒▒██▒  ██▒   ▓██░   █▒▓█   ▀ ▒██    ▒ ▒▒ █ █ ▒░
-            ▒███   ▒▓█    ▄ ▒██▀▀██░▒██░  ██▒    ▓██  █▒░▒███   ░ ▓██▄   ░░  █   ░
-            ▒▓█  ▄ ▒▓▓▄ ▄██▒░▓█ ░██ ▒██   ██░     ▒██ █░░▒▓█  ▄   ▒   ██▒ ░ █ █ ▒ 
-            ░▒████▒▒ ▓███▀ ░░▓█▒░██▓░ ████▓▒░      ▒▀█░  ░▒████▒▒██████▒▒▒██▒ ▒██▒
-            ░░ ▒░ ░░ ░▒ ▒  ░ ▒ ░░▒░▒░ ▒░▒░▒░       ░ ▐░  ░░ ▒░ ░▒ ▒▓▒ ▒ ░▒▒ ░ ░▓ ░
-             ░ ░  ░  ░  ▒    ▒ ░▒░ ░  ░ ▒ ▒░       ░       
-               ░  ░░ ░       ░  ░  ░    ░ ░           ░     ░  ░      ░   ░    ░  
-                   ░                                 ░                            
+    ▓█████  ▄████▄   ██░ ██  ▒█████      ██▒   █▓▓█████   ██████ ▒██   ██▒
+    ▓█   ▀ ▒██▀ ▀█  ▓██░ ██▒▒██▒  ██▒   ▓██░   █▒▓█   ▀ ▒██    ▒ ▒▒ █ █ ▒░
+    ▒███   ▒▓█    ▄ ▒██▀▀██░▒██░  ██▒    ▓██  █▒░▒███   ░ ▓██▄   ░░  █   ░
+    ▒▓█  ▄ ▒▓▓▄ ▄██▒░▓█ ░██ ▒██   ██░     ▒██ █░░▒▓█  ▄   ▒   ██▒ ░ █ █ ▒ 
+    ░▒████▒▒ ▓███▀ ░░▓█▒░██▓░ ████▓▒░      ▒▀█░  ░▒████▒▒██████▒▒▒██▒ ▒██▒
+    ░░ ▒░ ░░ ░▒ ▒  ░ ▒ ░░▒░▒░ ▒░▒░▒░       ░ ▐░  ░░ ▒░ ░▒ ▒▓▒ ▒ ░▒▒ ░ ░▓ ░
+     ░ ░  ░  ░  ▒    ▒ ░▒░ ░  ░ ▒ ▒░       ░       
+       ░  ░░ ░       ░  ░  ░    ░ ░           ░     ░  ░      ░   ░    ░  
+           ░                                 ░                            
                         """
 
 Menu_1 = f"""
-        ┏━ [ST] Setup                                                             Exit [E] ━┓
-        ┣━ [I] Info                                                               Next [N] ━┫
-        ┣━ [S] Server ┏━━━━━━━━━━━━━━━━┓              ┏━━━━━━━┓          ┏━━━━━━━━━━━┓      ┃
-        ┗━━━┳━━━━━━━━━┫ Discord Tools  ┣━━━━━━━━━━┳━━━┫ Osint ┣━━━━━━━┳━━┫ Web Tools ┣━━━━━━┛
-            ┃         ┗━━━━━━━━━━━━━━━━┛          ┃   ┗━━━━━━━┛       ┃  ┗━━━━━━━━━━━┛
-            ┣━ [01] Webhook Spammer               ┣━ [06] soon        ┣━ [09] Web Scanner
-            ┣━ [02] soon                          ┣━ [07] soon        ┗━ [10] Port Scanner (just use nmap bru)
-            ┣━ [03] soon                          ┗━ [08] soon
-            ┣━ [04] soon
-            ┗━ [05] soon
+    ┏━ [ST] Setup                                                             Exit [E] ━┓
+    ┣━ [I] Info                                                               Next [N] ━┫
+    ┣━ [S] Server ┏━━━━━━━━━━━━━━━━┓              ┏━━━━━━━┓          ┏━━━━━━━━━━━┓      ┃
+    ┗━━━┳━━━━━━━━━┫ Discord Tools  ┣━━━━━━━━━━┳━━━┫ Osint ┣━━━━━━━┳━━┫ Web Tools ┣━━━━━━┛
+        ┃         ┗━━━━━━━━━━━━━━━━┛          ┃   ┗━━━━━━━┛       ┃  ┗━━━━━━━━━━━┛
+        ┣━ [01] Webhook Spammer               ┣━ [06] soon        ┣━ [09] Web Scanner
+        ┣━ [02] soon                          ┣━ [07] soon        ┗━ [10] Port Scanner (just use nmap bru)
+        ┣━ [03] soon                          ┗━ [08] soon
+        ┣━ [04] soon
+        ┗━ [05] soon
 """
 Menu_2 = f"""
-        ┏━ [ST] Setup                  Exit [E] ━┓
-        ┣━ [I] Info                    Back [B] ━┫
-        ┣━ [S] Server ┏━━━━━━━━━━━━━━━━┓         ┃
-        ┗━━━┳━━━━━━━━━┫ Bot Control    ┣━━━━━━━━━┛
-            ┃         ┗━━━━━━━━━━━━━━━━┛               
-            ┣━ [11] Configure Bot / Reconfigure Bot                                                
-            ┣━ [12] Start Bot                                                 
-            ┣━ [13] soon                              
-            ┣━ [14] soon
-            ┣━ [15] soon
-            ┣━ [16] soon
-            ┣━ [17] soon
-            ┗━ [18] soon
+    ┏━ [ST] Setup                  Exit [E] ━┓
+    ┣━ [I] Info                    Back [B] ━┫
+    ┣━ [S] Server ┏━━━━━━━━━━━━━━━━┓         ┃
+    ┗━━━┳━━━━━━━━━┫ Bot Control    ┣━━━━━━━━━┛
+        ┃         ┗━━━━━━━━━━━━━━━━┛               
+        ┣━ [11] Configure Bot / Reconfigure Bot                                                
+        ┣━ [12] Start Bot                                                 
+        ┣━ [13] soon                              
+        ┣━ [14] soon
+        ┣━ [15] soon
+        ┣━ [16] soon
+        ┣━ [17] soon
+        ┗━ [18] soon
 """
 BANNER = Colorate.Horizontal(Colors.white_to_blue, ASCII_INTERFACE)
 MENU1 = Colorate.Horizontal(Colors.white_to_blue, Menu_1)
